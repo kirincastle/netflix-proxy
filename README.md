@@ -4,6 +4,9 @@
 
 find a (recent)[n19](https://github.com/ab77/netflix-proxy#footnotes) Debian or Ubuntu box with root on a clean public IP and run:
 
+change debian/ubuntu repository using [Debian Sources List Generator](https://debgen.simplylinux.ch/), make sure to use table release
+Update debian/ubuntu before apply below config.
+
     apt-get update\
 	  && apt-get -y install vim dnsutils curl sudo\
 	  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
